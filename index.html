@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="./assets/css/home.css" rel="stylesheet">
+    <link rel="icon" href="./assets/img/favicon.png">
+    <title>PIXEL PERFECT - Accueil</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/img/favicon.png" alt="PIXEL PERFECT" width="40"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./draw.php" target="_blank">Dessiner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./masterpiece.php" target="_blank">Chef d'Œuvre actuel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./masterpiece.php" target="_blank">Dépôt GitHub</a>
+                        </li>             
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>PIXEL PERFECT</h1>
+        <img class="title" src="./assets/img/title.svg" alt="PIXEL PERFECT">
+        <a href="#cards" class="down-btn"><img src="./assets/img/chevron-down.svg" alt="Continuer"></a>
+    </section>
+    
+    <section id="cards">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-12 col-lg-4 d-block">
+                    <div class="cardwrapper">
+                        <img class="icon" src="./assets/img/bulb.svg" alt="Concept">
+                        <h2>Concept</h2>
+                        <p>PIXEL PERFECT consiste à <b>dessiner</b> une magnifique œuvre en pixel art et ce en toute <b>liberté</b> !</p>
+                        <p>Ainsi le dernier dessin envoyé pourra s'afficher sur une page web en plein écran pour en profiter !</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="cardwrapper">
+                        <img class="icon" src="./assets/img/cpu.svg" alt="Matériel">
+                        <h2>Matériel</h2>
+                        <p>Pour faire fonctionner ce projet, il vous faudra un <b>serveur</b> pour héberger l'application web, un <b>Raspberry Pi4 Model B</b>, un écran <b>3.5inch RPi LCD</b> et c'est tout !</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="cardwrapper">
+                        <img class="icon" src="./assets/img/code-circle-2.svg" alt="Développement">
+                        <h2>Développement</h2>
+                        <p>L'application web est développée en <b>PHP</b>, <b>HTML/CSS</b> et <b>JavaScript natif.</b></p>
+                        <p>Il vous faudra configurer l'écran pour le faire fonctionner.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#video" class="down-btn"><img src="./assets/img/chevron-down.svg" alt="Continuer"></a>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <h2>Présentation</h2>
+                    <iframe src="https://www.youtube.com/embed/vXvrlHw6JOg"></iframe>
+                </div>
+            </div>
+        </div>
+        <a href="#schema" class="down-btn"><img src="./assets/img/chevron-down.svg" alt="Continuer"></a>
+    </section>
+    
+    <section id="schema">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <h2>Schéma explicatif</h2>
+                    <img src="./assets/img/schema.svg" alt="Schéma explicatif">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-12 col-md-4">AOUIMER Ramzi</div>
+                <div class="col-12 col-md-4">CACHIA Killian</div>
+                <div class="col-12 col-md-4">POROSLAY Samuel</div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2"><img src="./assets/img/title.svg" alt="PIXEL PERFECT"></div>
+            </div>
+        </div>
+        <div class="copyright">IUT de Troyes - Copyright © 2023</div>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.js"></script>
+</body>
+</html>
+
