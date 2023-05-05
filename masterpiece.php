@@ -8,7 +8,7 @@ $dbpasswd="{password}";
 $pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.'', $dbuser, $dbpasswd);
 $pdo->exec("SET CHARACTER SET utf8");
 
-$sql = "SELECT * FROM drawing";
+$sql = "SELECT * FROM {your_table}";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 $pixels = $stmt->fetchAll();
