@@ -9,10 +9,10 @@ if (isset($_POST["submit"])) {
 	$pdo = new PDO('mysql:host='.$dbhost.';port='.$dbport.';dbname='.$db.'', $dbuser, $dbpasswd);
 	$pdo->exec("SET CHARACTER SET utf8");
 
-	$sql = 'TRUNCATE TABLE drawing;';
+	$sql = 'TRUNCATE TABLE {your_table};';
 	$exec = [];
 	for ($i = 0; $i < 1296; $i++) {
-		$sql .= "INSERT INTO drawing(id, couleur) VALUES (0, ?);";
+		$sql .= "INSERT INTO {your_table}(id, couleur) VALUES (0, ?);";
 		array_push($exec, $_POST['couleur'.$i]);
 	}
 
