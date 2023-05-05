@@ -8,7 +8,7 @@ Changer les indentifiants de la base de données dans draw.php et masterpiece.ph
 
 Créer la base de données et la table
 Structure de la table :
-ID (auto incrment) | couleur (code hexa)
+ID (auto increment) | couleur (code hexa)
 
 
 Pour changer la durée de rechargement (30000 ms par defaut), il faut changer la valeur dans masterpiece.php ligne 41
